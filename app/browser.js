@@ -32,7 +32,7 @@ function signIn (url) {
         var m = document.querySelector('#pending');
         var link = m.querySelector('a');
         m.style.display = 'block';
-        link.setAttribute('href', url);
+        link.setAttribute('href', boot.href);
         link.textContent = url;
     });
     boot.on('reject', function () {
